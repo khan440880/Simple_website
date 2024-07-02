@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Place Your Order</title>
+<style>
+  
+ 
+      
+        header {
+            background-color: #333;
+            height: 30px;
+            color: black;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        
+        
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        
+        
+  body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(226, 210, 61);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label {
+    display: inline;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+    display: inline block;
+  }
+  
+  input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 515px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+</style>
+</head>
+<body>
+
+  <header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboute.html">About</a></li>
+            
+            <li><a href="contact us.html">Contact</a></li>
+            <li><a href="index.html 2.html">Order Now</a></li>
+        </ul>
+    </nav>
+  <div class="container">
+    <h1>Place Your Order</h1>
+    <form id="orderForm" action="/submit_order" method="post">
+      Project Name:
+      <input type="text" id="projectName" name="projectName" required><br>
+
+      City:
+      <select id="City" name="City" required>
+        <option value="select Your City">Select Your City</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islambad">Islambad</option>
+        <option value="Rawalpindi">Rawalpindi</option>
+        <option value="peshawar">peshawar</option>
+        <option value="Wah Cantt">Wah cantt</option>
+        <option value="Faislabad">Faislabad</option>
+        <option value="Mardan">Mardan</option>
+        <option value="Kohat">Kohat</option>
+        <option value="Bakhar">Bakhar</option>
+        <option value="Multan">Multan</option>
+        <option value="Sawat">Sawat</option>
+        <option value="Waziristan">Waziristan</option>
+        <option value="Quetta">Quetta</option>
+        <option value="Karachi">Karachi</option>
+        <option value="Hydrabad">Hydrabad</option>
+        <option value="Kashmir">Kashmir</option>
+        <option value="Other">Other</option>
+      </select><br>
+
+      Order Placed Date:
+      <input type="date" id="orderDate" name="orderDate" required>
+      Due Date:
+      <input type="date" id="dueDate" name="dueDate" required><br>
+
+      Project Type:<br><br>
+      <input type="radio" id="softwareApp" name="projectType"  required>
+      Software Application
+      <input type="radio" id="webDev" name="projectType"  required>
+      Web Development
+      <input type="radio" id="androidDev" name="projectType"  required>
+      Android Development<br><br>
+
+      Describe Your Project:<br>
+      <textarea id="projectDesc" name="projectDesc" rows="4" cols="50" required></textarea><br>
+
+      <input type="checkbox" id="agree" name="agree" required>
+      Do you agree all above information is correct?<br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</html>
+
+</body>  
+
+  
+  
